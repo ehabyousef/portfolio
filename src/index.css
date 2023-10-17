@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --primary: black;
+  --Secondry: #18181b;
+  --border: #a1a1aa7e;
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --bgheader: rgb(39 39 42);
+  --blue: #219ebc;
+}
+.light {
+  --primary: white;
+}
+body {
+  background-color: var(--primary);
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #d4d4d8;
+  border: 5px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.container {
+  width: 80%;
+  border: 1px solid var(--border);
+  margin: 0 auto;
+  background: var(--Secondry);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+.divider {
+  border: 1px solid var(--border);
+  /* padding-top: 22px; */
+  margin: 3rem auto;
+  width: 97%;
+}
+button {
+  all: unset;
+}
+button:active {
+  scale: 0.9;
+}
+.contain {
+  padding: 0px 50px;
+  width: 100%;
+}
+.scrollTop {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+}
+.scrollTop:hover {
+  animation: bounce 0.8s infinite;
+}
+@keyframes bounce {
+  0% {
+    bottom: 10px;
+  }
+  60% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}

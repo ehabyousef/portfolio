@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin: 1.2rem 0px;
+}
+header nav {
+  background-color: var(--bgheader);
+  padding: 0.7rem 1.8rem;
+  border-radius: 50px;
+  box-shadow: 1px 1px 20px #3d3d3da6;
+}
+header .popup button {
+  display: none;
+}
+@media (max-width: 750px) {
+  header nav {
+    display: none;
+  }
+  header .popup button {
+    display: block;
+  }
+}
+
+header ul.appmenu {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+header ul li a {
+  color: var(--title);
+  opacity: 0.6;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  letter-spacing: 1.5px;
+}
+header ul li a:hover {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 1.2rem;
+  color: var(--blue);
+}
+header .popmenu {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 48, 0.822);
+  z-index: 11;
+  backdrop-filter: blur(4px);
+}
+header .popmenu ul {
+  border: 1px solid var(--border);
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--Secondry);
+  scale: 0;
+  animation: move 0.8s forwards;
+}
+@keyframes move {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+header .popmenu ul li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.66rem 0;
+}
+header .popmenu ul li:last-child {
+  border-bottom: none;
+}
+header .popmenu ul li:first-child {
+  text-align: right;
+  border-bottom: none;
+}
+header .popmenu ul li a {
+  font-size: 1.3rem;
+}
+
+button svg {
+  background-color: var(--bgheader);
+  width: 2rem;
+  height: 2rem !important;
+  padding: 10px;
+  color: var(--subtitle);
+  border: 1px solid rgba(240, 164, 0, 0.315);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button svg:hover {
+  color: var(--title);
+  border: 1px solid rgba(240, 164, 0, 0.692);
+}
+header > div.popmenu > ul > li:nth-child(1) > button > svg:hover {
+  transform: rotate(90deg);
+}

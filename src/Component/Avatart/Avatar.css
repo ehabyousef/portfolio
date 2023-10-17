@@ -1,0 +1,56 @@
+.contain {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar {
+  margin: 35px 0;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icons {
+  margin-top: 20px;
+}
+.text h1 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--title);
+}
+.text p {
+  font-size: 14px;
+  color: var(--subtitle);
+  line-height: 24px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.icons svg {
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.icons svg:hover {
+  font-size: 1.7rem;
+  color: var(--title);
+}
+@media (max-width: 750px) {
+  .text h1 {
+    font-size: 1.4rem;
+    line-height: 25px;
+  }
+  .text p {
+    line-height: 17px;
+  }
+}

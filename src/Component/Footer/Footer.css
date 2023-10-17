@@ -1,0 +1,33 @@
+.footer {
+  margin-bottom: 3rem;
+}
+.foot_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  gap: 1.1rem;
+}
+.foot_content ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.foot_content ul li a {
+  color: var(--subtitle);
+  font-size: 1.1rem;
+}
+.foot_content p {
+  color: var(--subtitle);
+  font-size: 1.3rem;
+}
+@media (max-width: 800px) {
+  .foot_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
