@@ -9,7 +9,7 @@ header nav {
   background-color: var(--bgheader);
   padding: 0.7rem 1.8rem;
   border-radius: 50px;
-  box-shadow: 1px 1px 20px #3d3d3da6;
+  box-shadow: 1px 1px 30px #3d3d3d7c;
 }
 header .popup button {
   display: none;

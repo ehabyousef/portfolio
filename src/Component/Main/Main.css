@@ -85,6 +85,10 @@
 .left_main .card .content .icon a {
   color: var(--blue);
   font-size: 1.3rem;
+  transition: 0.3s ;
+}
+.left_main .card .content .icon a:hover {
+  text-decoration: underline;
 }
 
 /* responsive  */
