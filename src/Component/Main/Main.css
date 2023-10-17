@@ -85,10 +85,16 @@
 .left_main .card .content .icon a {
   color: var(--blue);
   font-size: 1.3rem;
-  transition: 0.3s ;
+  transition: 0.3s;
+  position: relative;
 }
-.left_main .card .content .icon a:hover {
-  text-decoration: underline;
+.left_main .card .content .icon a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--blue);
 }
 
 /* responsive  */
