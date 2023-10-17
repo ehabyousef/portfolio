@@ -81,22 +81,32 @@
   gap: 15px;
   font-size: 1.3rem;
   cursor: pointer;
+  color: var(--subtitle);
+}
+.left_main .card .content .icon .marks svg {
+  transition: 0.3s;
+}
+.left_main .card .content .icon .marks svg:hover {
+  color: var(--title);
+  font-size: 1.5rem;
 }
 .left_main .card .content .icon a {
   color: var(--blue);
   font-size: 1.3rem;
-  transition: 0.3s;
   position: relative;
 }
 .left_main .card .content .icon a::before {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 0%;
   height: 1px;
   background-color: var(--blue);
+  transition: 0.3s;
 }
-
+.left_main .card .content .icon a:hover::before {
+  width: 100%;
+}
 /* responsive  */
 @media (max-width: 800px) {
   .portfolio {
