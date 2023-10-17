@@ -6,24 +6,7 @@ import Header from "./Component/Header/Header";
 import Main from "./Component/Main/Main";
 
 function App() {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const isAtTop = window.scrollY === 0;
-      if (!isAtTop) {
-        setShowScrollTop(true);
-      } else if (isAtTop) {
-        setShowScrollTop(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-  }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
 
   return (
     <div className="container">
