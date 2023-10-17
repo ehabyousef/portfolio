@@ -15,7 +15,7 @@
   color: var(--subtitle);
   text-transform: capitalize;
   border-radius: 12px;
-  width: 130px;
+  width: 10rem;
   cursor: pointer;
   opacity: 0.6;
   transition: 0.3s;

@@ -10,7 +10,7 @@ const Footer = () => {
                     <li><a href="">Speaking</a></li>
                     <li><a href="">Users</a></li>
                 </ul>
-                <p>&copy; 2023 Ehab Yousef.All Rights Reserved</p>
+                <p><span>&copy;</span> 2023 Ehab Yousef.All Rights Reserved</p>
             </div>
         </div>
     );

@@ -4,9 +4,9 @@ const Main = () => {
     return (
         <div className='contain portfolio'>
             <div className="right_main">
-                <button>All Projects</button>
+                <button className='active'>All Projects</button>
                 <button>Html & Css</button>
-                <button className='active'>Javascript</button>
+                <button >Javascript</button>
                 <button>React</button>
                 <button>Team Work</button>
             </div>

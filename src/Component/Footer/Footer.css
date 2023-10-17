@@ -19,10 +19,19 @@
 .foot_content ul li a {
   color: var(--subtitle);
   font-size: 1.1rem;
+  transition: 0.3s;
+}
+.foot_content ul li a:hover {
+  color: var(--title);
+  font-size: 1.19rem;
 }
 .foot_content p {
   color: var(--subtitle);
   font-size: 1.3rem;
+}
+.foot_content p span{
+  color: var(--title);
+  font-size: 1.4rem;
 }
 @media (max-width: 800px) {
   .foot_content {

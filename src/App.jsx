@@ -39,7 +39,7 @@ function App() {
         <button className="scrollTop" onClick={scrollToTop}>
           <i className="fa-solid fa-angles-up"></i>
         </button>
-      :''}
+        : ''}
     </div>
   );
 }
