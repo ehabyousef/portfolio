@@ -78,7 +78,7 @@ const Main = () => {
                             <div className="icon">
                                 <div className="marks">
                                     <a href=""><i className="fa-solid fa-link"></i></a>
-                                    <a href="">
+                                    <a href={x.demo} target='blank'>
                                         <i className="fa-brands fa-github"></i>
                                     </a>
                                 </div>
