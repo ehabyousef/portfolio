@@ -9,10 +9,9 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const isAtTop = window.scrollY === 0;
-      if (!isAtTop) {
+      if (window.scrollY > 300) {
         setShowScrollTop(true);
-      } else if (isAtTop) {
+      } else {
         setShowScrollTop(false);
       }
     };
