@@ -71,7 +71,7 @@ const Main = () => {
             <div className="left_main">
                 {filteredData.map((x, ind) => (
                     <div className="card" key={ind}>
-                        <img src="image.jpg" alt="" width="250px" />
+                        <img src={x.img} alt="" width="250px" height={200} />
                         <div className="content" style={{ width: '250px' }}>
                             <h1 className="tilte">{x.title}</h1>
                             <p className="subtitle">{x.description}</p>

@@ -4,7 +4,7 @@
       "title": "tempelet 1",
       "description": "simple tempelate with Html & css with Elzero web school",
       "category": ["css"],
-      "img": "csdsdsds.png",
+      "img": "https://i.ytimg.com/vi/uuBpOrrgY8w/maxresdefault.jpg",
       "demo": "https://github.com/ehabyousef/tempelate-1",
       "repo": "https://ehabyousef.github.io/tempelate-1/"
     },
@@ -12,7 +12,7 @@
       "title": "tempelet 2",
       "description": "advanced tempelate with Html & css with Elzero web school using new techniques",
       "category": ["css"],
-      "img": "csdsdsds.png",
+      "img": "https://i.ytimg.com/vi/uuBpOrrgY8w/maxresdefault.jpg",
       "demo": "https://ehabyousef.github.io/html-css-series-project",
       "repo": "https://ehabyousef.github.io/html-css-series-project/series.html"
     },
@@ -20,7 +20,7 @@
       "title": "tempelet 3",
       "description": "more advanced tempelate with Html & css with Elzero web school using advanced techniques",
       "category": ["css"],
-      "img": "csdsdsds.png",
+      "img": "https://i.ytimg.com/vi/uuBpOrrgY8w/maxresdefault.jpg",
       "demo": "https://github.com/ehabyousef/tempelate-3",
       "repo": "https://ehabyousef.github.io/tempelate-3//demo.html"
     },
@@ -28,7 +28,7 @@
       "title": "Drinks",
       "description": "landing page for drinks with js & swipper js with a modern ui design ",
       "category": ["js"],
-      "img": "csdsdsds.png",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfb8d59889433.5a32c074ee8c7.jpg",
       "demo": "https://github.com/ehabyousef/landing-drinks",
       "repo": "https://ehabyousef.github.io/landing-drinks/indesx.html"
     },
@@ -36,7 +36,7 @@
       "title": "social media",
       "description": "social media web build with api using bootstrap && js ",
       "category": ["js"],
-      "img": "csdsdsds.png",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfb8d59889433.5a32c074ee8c7.jpg",
       "demo": "https://github.com/ehabyousef/socialmedia",
       "repo": "https://timely-starlight-fb954f.netlify.app/"
     },
@@ -44,7 +44,7 @@
       "title": "College Web",
       "description": "College Website builded for college task with team work using bootstrap && js && agile",
       "category": ["js", "team"],
-      "img": "csdsdsds.png",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfb8d59889433.5a32c074ee8c7.jpg",
       "demo": "https://github.com/ehabyousef/College-wepsite",
       "repo": "https://ehabyousef.github.io/College-wepsite/"
     },
@@ -52,7 +52,7 @@
       "title": "games",
       "description": "some simple games using js",
       "category": ["js"],
-      "img": "csdsdsds.png",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfb8d59889433.5a32c074ee8c7.jpg",
       "demo": "https://github.com/ehabyousef/x-o-Game",
       "repo": "dsaddddshttps://ehabyousef.github.io/x-o-Game/ddsdf"
     },
@@ -60,7 +60,7 @@
       "title": "portfolio ",
       "description": "simple portfolio builded with html, css and javaScript",
       "category": ["js"],
-      "img": "csdsdsds.png",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfb8d59889433.5a32c074ee8c7.jpg",
       "demo": "https://github.com/ehabyousef/First-portfolio",
       "repo": "https://ehabyousef.github.io/First-portfolio/"
     },
@@ -68,7 +68,7 @@
       "title": "my blog",
       "description": "simple blog builded with html, css and javaScript for college task",
       "category": ["js"],
-      "img": "csdsdsds.png",
+      "img": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6cfb8d59889433.5a32c074ee8c7.jpg",
       "demo": "https://github.com/ehabyousef/my-blog",
       "repo": "https://ehabyousef.github.io/my-blog/My%20blog.html"
     },
@@ -76,7 +76,7 @@
       "title": "crud ",
       "description": "simple crud system  builded with react using hooks and api",
       "category": ["React"],
-      "img": "csdsdsds.png",
+      "img": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
       "demo": "dsaaaaadsadsd",
       "repo": "dsaddddsddsdf"
     },
@@ -84,7 +84,7 @@
       "title": "dates Reminder ",
       "description": "simple web app builded with react using hooks",
       "category": ["React"],
-      "img": "csdsdsds.png",
+      "img": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
       "demo": "dsaaaaadsadsd",
       "repo": "dsaddddsddsdf"
     },
@@ -92,7 +92,7 @@
       "title": "Food App",
       "description": "simple crud system  builded with react using hooks and api worked with team for final training project",
       "category": ["React", "team"],
-      "img": "csdsdsds.png",
+      "img": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
       "demo": "https://github.com/ehabyousef/f3g",
       "repo": "dsaddddsddsdf"
     },
@@ -100,7 +100,7 @@
       "title": "Prayer Guide",
       "description": "simple web app builded with react using hooks and api",
       "category": ["React"],
-      "img": "csdsdsds.png",
+      "img": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
       "demo": "https://github.com/ehabyousef/prayer-guide",
       "repo": "https://silly-squirrel-b16c62.netlify.app/"
     },
@@ -108,7 +108,7 @@
       "title": "shopping Cart",
       "description": "simple shopping Cart builded with react using hooks and api ",
       "category": ["React"],
-      "img": "csdsdsds.png",
+      "img": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
       "demo": "dsaaaaadsadsd",
       "repo": "dsaddddsddsdf"
     },
@@ -116,7 +116,7 @@
       "title": "university web",
       "description": "university web builded with react worked with team using agile",
       "category": ["React", "team"],
-      "img": "csdsdsds.png",
+      "img": "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png",
       "demo": "https://github.com/Gehad555/University_Services",
       "repo": "dsaddddsddsdf"
     }
