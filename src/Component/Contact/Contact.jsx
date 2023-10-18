@@ -33,7 +33,7 @@ const Contact = () => {
                             errors={state.errors}
                         />
                     </div>
-                    <button type="submit" disabled={state.submitting}>{state.submitting ? <i className="fas fa-spinner fa-spin"></i> : 'submit'}</button>
+                    <button type="submit" disabled={state.submitting} >{state.submitting ? <i className="fas fa-spinner fa-spin"></i> : 'submit'}</button>
                     {state.succeeded && (<p>Thanks for joining!💖🖤</p>)}
                 </form>
                 <div className="anim">
