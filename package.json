@@ -11,6 +11,7 @@
     "projects": "json-server --watch projects.json --port 3030"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "axios": "^1.5.1",
     "react": "^18.2.0",

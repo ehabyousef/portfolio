@@ -1,6 +1,9 @@
 import React from "react";
 import "./Contact.css"
+import { ValidationError, useForm } from "@formspree/react";
 const Contact = () => {
+    const [state, handleSubmit] = useForm("xleyakko");
+
     return (
         <div className="contain cont_main">
             <div className="contact">
@@ -12,17 +15,28 @@ const Contact = () => {
                 </p>
             </div>
             <div className="box">
-                <div className="form">
+                <form className="form" onSubmit={handleSubmit}>
                     <div className="first">
                         <label htmlFor="email">Email Adress</label>
-                        <input type="email" name='' id="email" required />
+                        <input type="email" name='email' id="email" required />
+                        <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+                        />
                     </div>
                     <div className="sec">
                         <label htmlFor="message">Your Message </label>
-                        <textarea name="" id="message" required></textarea>
+                        <textarea name="message" id="message" required></textarea>
+                        <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+                        />
                     </div>
-                    <button type="submit">submit</button>
-                </div>
+                    <button type="submit" disabled={state.submitting}>{state.submitting ? '' : <i className="fas fa-spinner fa-spin"></i>}</button>
+                    {state.succeeded ? <p>Thanks for joining!💖🖤</p> : ''}
+                </form>
                 <div className="anim">
                     <img src="circle.png" alt="" width={150} />
                 </div>
