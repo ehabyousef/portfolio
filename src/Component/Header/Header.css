@@ -87,7 +87,7 @@ header .popmenu ul li a {
 }
 
 #root > div > header > button > svg.moon_icon{
-  fill: #F27830;
+  fill: #dacc08;
 }
 button svg {
   background-color: var(--bgheader);
