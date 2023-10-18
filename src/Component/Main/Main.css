@@ -69,6 +69,7 @@
   color: var(--subtitle);
   line-height: 20px;
   margin: 9px 0;
+  height: 70px;
 }
 .left_main .card .content .icon {
   display: flex;
@@ -81,9 +82,9 @@
   gap: 15px;
   font-size: 1.3rem;
   cursor: pointer;
-  color: var(--subtitle);
 }
 .left_main .card .content .icon .marks svg {
+  color: var(--subtitle);
   transition: 0.3s;
 }
 .left_main .card .content .icon .marks svg:hover {

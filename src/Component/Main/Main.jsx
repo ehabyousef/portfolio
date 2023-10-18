@@ -77,8 +77,10 @@ const Main = () => {
                             <p className="subtitle">{x.description}</p>
                             <div className="icon">
                                 <div className="marks">
-                                    <i className="fa-solid fa-link"></i>
-                                    <i className="fa-brands fa-github"></i>
+                                    <a href=""><i className="fa-solid fa-link"></i></a>
+                                    <a href="">
+                                        <i className="fa-brands fa-github"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
