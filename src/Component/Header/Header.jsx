@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css'
 const Header = () => {
     const [popShow, setpopShow] = useState(false)
-
+    const [mode, setmode] = useState(localStorage.getItem('currentMode') ?? 'dark')
+    useEffect(() => {
+        if (mode === 'light') {
+            document.body.classList.remove('dark')
+            document.body.classList.add('light')
+        } else {
+            document.body.classList.add('dark')
+            document.body.classList.remove('light')
+        }
+    }, [mode])
+    console.log(mode);
     return (
         <header>
             <div className='popup'> <button onClick={() => setpopShow(true)}><i className="fa-solid fa-bars"></i></button></div>
@@ -15,7 +25,10 @@ const Header = () => {
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <button className='darkbtn'><i className="fa-regular fa-moon moon"></i></button>
+            <button onClick={() => {
+                localStorage.setItem('currentMode', mode === 'dark' ? "light" : "dark");
+                setmode(localStorage.getItem('currentMode'))
+            }} className='darkbtn'>{mode == 'dark' ? (<i className="fa-regular fa-moon moon"></i>) : (<i className="fa-regular fa-sun"></i>)}</button>
             {popShow ?
                 <div className="popmenu">
                     <ul>

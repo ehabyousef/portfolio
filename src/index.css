@@ -17,7 +17,12 @@ html {
   --blue: #219ebc;
 }
 .light {
-  --primary: white;
+  --primary: #f8f9fa;
+  --Secondry: #dee2e6;
+  --title: rgb(39 39 42);
+  --subtitle: rgb(82 82 91);
+  --bgheader: rgb(253 253 253);
+  --blue: #247ba0;
 }
 body {
   background-color: var(--primary);
