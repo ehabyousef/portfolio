@@ -19,7 +19,6 @@ const Main = () => {
 
     const handleEvent = (category) => {
         setActive(category);
-
         if (category === 'all') {
             setFilteredData(projectData);
         } else {
