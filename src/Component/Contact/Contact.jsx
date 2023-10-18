@@ -1,21 +1,8 @@
-import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import React from "react";
 import "./Contact.css"
 import { ValidationError, useForm } from "@formspree/react";
-import { send } from "vite";
 const Contact = () => {
-    // const [state, handleSubmit] = useForm("xleyakko");
-    const form = useRef();
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_5svhzrs', 'template_ipa83db', form.current, 'SgnpLsqpfTrEiqgFC')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+    const [state, handleSubmit] = useForm("xleyakko");
     return (
         <div className="contain cont_main">
             <div className="contact">
@@ -27,26 +14,27 @@ const Contact = () => {
                 </p>
             </div>
             <div className="box">
-                <form ref={form} className="form" onSubmit={sendEmail}>
+                <form className="form" onSubmit={handleSubmit}>
                     <div className="first">
                         <label htmlFor="email">Email Adress</label>
-                        <input type="email" name='user_email' id="email" required />
-                        {/* <ValidationError
+                        <input type="email" name='email' id="email" required />
+                        <ValidationError
                             prefix="Email"
                             field="email"
                             errors={state.errors}
-                        /> */}
+                        />
                     </div>
                     <div className="sec">
                         <label htmlFor="message">Your Message </label>
                         <textarea name="message" id="message" required></textarea>
-                        {/* <ValidationError
+                        <ValidationError
                             prefix="Message"
                             field="message"
                             errors={state.errors}
-                        /> */}
+                        />
                     </div>
-                    <button type="submit" value={send} >{state.submitting ? <i className="fas fa-spinner fa-spin"></i> : 'submit'} <span>{state.succeeded ? <p>Thanks for joining!💖🖤</p> : ''}</span></button>
+                    <button type="submit" disabled={state.submitting}>{state.submitting ? <i className="fas fa-spinner fa-spin"></i> : 'submit'}</button>
+                    {state.succeeded && (<p>Thanks for joining!💖🖤</p>)}
                 </form>
                 <div className="anim">
                     <img src="circle.png" alt="" width={150} />
