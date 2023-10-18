@@ -30,7 +30,9 @@ body {
   background-color: var(--primary);
   color: white;
   font-family: "Averia Sans Libre", sans-serif;
+  font-family: "Averia Serif Libre", serif;
   font-family: "Cormorant Garamond", serif;
+  font-family: "Rubik", sans-serif;
 }
 ::-webkit-scrollbar {
   width: 0.8rem;
