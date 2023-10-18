@@ -90,7 +90,7 @@
   color: var(--title);
   font-size: 1.5rem;
 }
-.left_main .card .content .icon a {
+/* .left_main .card .content .icon a {
   color: var(--blue);
   font-size: 1.3rem;
   position: relative;
@@ -106,7 +106,7 @@
 }
 .left_main .card .content .icon a:hover::before {
   width: 100%;
-}
+} */
 /* responsive  */
 @media (max-width: 800px) {
   .portfolio {
