@@ -20,7 +20,7 @@
   font-weight: bold;
   margin-left: 10px;
   color: var(--title);
-   font-family: "Jura", sans-serif;
+  font-family: "Jura", sans-serif;
 }
 .contact p {
   color: var(--subtitle);
@@ -84,6 +84,10 @@
   cursor: pointer;
   opacity: 0.6;
   transition: 0.3s;
+}
+#root > div > div.contain.cont_main > div.box > form > button > svg {
+  height: 20px !important;
+  width: 20px;
 }
 .box .form button:hover {
   color: var(--title);

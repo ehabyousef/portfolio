@@ -34,8 +34,7 @@ const Contact = () => {
                             errors={state.errors}
                         />
                     </div>
-                    <button type="submit" disabled={state.submitting}>{state.submitting ? '' : <i className="fas fa-spinner fa-spin"></i>}</button>
-                    {state.succeeded ? <p>Thanks for joining!💖🖤</p> : ''}
+                    <button type="submit" disabled={state.submitting}>{state.submitting ? <i className="fas fa-spinner fa-spin"></i> : 'submit'} <span>{state.succeeded ? <p>Thanks for joining!💖🖤</p> : ''}</span></button>
                 </form>
                 <div className="anim">
                     <img src="circle.png" alt="" width={150} />
