@@ -3,6 +3,7 @@ import "./Contact.css"
 import { ValidationError, useForm } from "@formspree/react";
 const Contact = () => {
     const [state, handleSubmit] = useForm("xleyakko");
+
     return (
         <div className="contain cont_main">
             <div className="contact">
@@ -33,8 +34,10 @@ const Contact = () => {
                             errors={state.errors}
                         />
                     </div>
-                    <button type="submit" disabled={state.submitting} >{state.submitting ? <i className="fas fa-spinner fa-spin"></i> : 'submit'}</button>
-                    {state.succeeded && (<p>Thanks for joining!💖🖤</p>)}
+                    <button type="submit" disabled={state.submitting} >
+                        {state.submitting ? <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : 'submit'}
+                    </button>
+                    {state.succeeded && (<p style={{ fontSize: '25px' }}>Thanks for joining!💖🖤</p>)}
                 </form>
                 <div className="anim">
                     <img src="circle.png" alt="" width={150} />
