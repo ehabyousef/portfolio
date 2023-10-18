@@ -69,7 +69,7 @@
   color: var(--subtitle);
   line-height: 20px;
   margin: 9px 0;
-  height: 70px;
+  height: 60px;
 }
 .left_main .card .content .icon {
   display: flex;
