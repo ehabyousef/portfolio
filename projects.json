@@ -2,78 +2,123 @@
   "results": [
     {
       "title": "tempelet 1",
+      "description": "simple tempelate with Html & css with Elzero web school",
       "category": ["css"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "tempelet 2",
+      "description": "advanced tempelate with Html & css with Elzero web school using new techniques",
       "category": ["css"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "tempelet 3",
+      "description": "more advanced tempelate with Html & css with Elzero web school using advanced techniques",
       "category": ["css"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "Drinks",
+      "description": "landing page for drinks with js & swipper js with a modern ui design ",
       "category": ["js"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "social media",
+      "description": "social media web build with api using bootstrap && js ",
       "category": ["js"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "College Web",
+      "description": "College Website builded for college task with team work using bootstrap && js && agile",
       "category": ["js", "team"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "games",
+      "description": "some simple games using js",
       "category": ["js"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "portfolio ",
+      "description": "simple portfolio builded with html, css and javaScript",
       "category": ["js"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "my blog",
+      "description": "simple blog builded with html, css and javaScript for college task",
       "category": ["js"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "crud ",
+      "description": "simple crud system  builded with react using hooks and api",
       "category": ["React"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "dates Reminder ",
+      "description": "simple web app builded with react using hooks",
       "category": ["React"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "Food App",
+      "description": "simple crud system  builded with react using hooks and api worked with team for final training project",
       "category": ["React", "team"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "Prayer Guide",
+      "description": "simple web app builded with react using hooks and api",
       "category": ["React"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "shopping Cart",
+      "description": "simple shopping Cart builded with react using hooks and api ",
       "category": ["React"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     },
     {
       "title": "university web",
+      "description": "university web builded with react worked with team using agile",
       "category": ["React", "team"],
-      "img": "csdsdsds.png"
+      "img": "csdsdsds.png",
+      "demo": "dsaaaaadsadsd",
+      "repo": "dsaddddsddsdf"
     }
   ]
 }
