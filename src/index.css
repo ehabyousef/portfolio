@@ -80,6 +80,11 @@ button:active {
   bottom: 10px;
   right: 15px;
 }
+.scrollTop svg {
+  width: 4rem;
+  height: 4rem !important;
+  fill: var(--title);
+}
 .scrollTop:hover {
   animation: bounce 0.8s infinite;
 }
