@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.css"
 import { ValidationError, useForm } from "@formspree/react";
 const Contact = () => {
     const [state, handleSubmit] = useForm("xleyakko");
+    const [showmessage, setshowmessage] = useState(false)
+    useEffect(() => {
+        if (state.succeeded) {
+            setshowmessage(true)
+        } else {
+            setshowmessage(false)
+        }
+    }, [state.succeeded])
+
 
     return (
         <div className="contain cont_main">
@@ -35,7 +44,7 @@ const Contact = () => {
                         />
                     </div>
                     <button type="submit" disabled={state.submitting} >
-                        {state.submitting ? <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : 'submit'}
+                        {state.submitting ? <div className="lds-ring"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : 'submit'}
                     </button>
                     {state.succeeded && (<p style={{ fontSize: '25px' }}>Thanks for joining!💖🖤</p>)}
                 </form>

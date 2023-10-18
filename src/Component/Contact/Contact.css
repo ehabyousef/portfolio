@@ -85,10 +85,10 @@
   opacity: 0.6;
   transition: 0.3s;
 }
-#root > div > div.contain.cont_main > div.box > form > button > svg {
+/* #root > div > div.contain.cont_main > div.box > form > button > svg {
   height: 20px !important;
   width: 20px;
-}
+} */
 .box .form button:hover {
   color: var(--title);
   opacity: 1;
