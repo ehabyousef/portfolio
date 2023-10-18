@@ -25,6 +25,7 @@
   font-weight: 700;
   line-height: 40px;
   color: var(--title);
+  font-family: "Averia Sans Libre", sans-serif !important;
 }
 .text p {
   font-size: 14px;
