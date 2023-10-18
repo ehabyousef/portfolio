@@ -15,24 +15,20 @@ html {
   --subtitle: rgb(161 161 170);
   --bgheader: rgb(39 39 42);
   --blue: #219ebc;
-  --mainFont: ;
 }
 .light {
   --primary: #fbfbfb;
   --Secondry: #f0f0f0;
   --title: rgb(39 39 42);
   --subtitle: rgb(82 82 91);
-  --bgheader: #9897a1;
-  --blue: #f5e1d4;
+  --bgheader: #f7f7fa;
+  --blue: #f20505b0;
   --border: #403f53;
 }
 body {
   background-color: var(--primary);
   color: white;
-  font-family: "Averia Sans Libre", sans-serif;
-  font-family: "Averia Serif Libre", serif;
-  font-family: "Cormorant Garamond", serif;
-  font-family: "Rubik", sans-serif;
+  font-family: "Petrona", serif;
 }
 ::-webkit-scrollbar {
   width: 0.8rem;

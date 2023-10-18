@@ -25,10 +25,10 @@
   font-weight: 700;
   line-height: 40px;
   color: var(--title);
-  font-family: "Averia Sans Libre", sans-serif !important;
+  font-family: "Jura", sans-serif;
 }
 .text p {
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--subtitle);
   line-height: 24px;
 }

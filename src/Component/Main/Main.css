@@ -17,7 +17,7 @@
   border-radius: 12px;
   width: 10rem;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: 0.3s;
 }
 .right_main button:hover {
@@ -64,6 +64,8 @@
 }
 .left_main .card .content h1 {
   color: var(--title);
+  font-family: "Jura", sans-serif;
+  text-align: center;
 }
 .left_main .card .content p {
   color: var(--subtitle);

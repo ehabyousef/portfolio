@@ -20,6 +20,7 @@
   font-weight: bold;
   margin-left: 10px;
   color: var(--title);
+   font-family: "Jura", sans-serif;
 }
 .contact p {
   color: var(--subtitle);
