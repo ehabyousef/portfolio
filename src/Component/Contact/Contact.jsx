@@ -3,6 +3,7 @@ import "./Contact.css";
 import { ValidationError, useForm } from "@formspree/react";
 import Lottie from "lottie-react";
 import doneAnimation from "../../../public/done.json";
+import contact_light from '../../../public/contact_light.json';
 const Contact = () => {
     const [state, handleSubmit] = useForm("xleyakko");
     const [showmessage, setshowmessage] = useState(false);
@@ -72,7 +73,7 @@ const Contact = () => {
                     )}
                 </form>
                 <div className="anim">
-                    <img src="circle.png" alt="" width={150} />
+                    <Lottie className="contact_animation" style={{ height: '25rem' }} animationData={contact_light} />
                 </div>
             </div>
         </div>

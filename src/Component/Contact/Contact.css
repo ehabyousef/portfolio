@@ -91,24 +91,7 @@
   color: var(--title);
   opacity: 1;
 }
-@media (max-width: 800px) {
-  .box .form div {
-    display: flex;
-    flex-direction: column;
-  }
-  .box .form button {
-    margin: 0 auto;
-  }
-  .box {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact span {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
+
 .lds-ring {
   display: inline-block;
   position: relative;
@@ -142,5 +125,29 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 800px) {
+  .box .form div {
+    display: flex;
+    flex-direction: column;
+  }
+  .box .form button {
+    margin: 0 auto;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width:1080px) {
+  .contact_animation{
+    display: none;
   }
 }
