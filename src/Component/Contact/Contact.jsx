@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css"
 import { ValidationError, useForm } from "@formspree/react";
+import Lottie from "lottie-react";
+import doneAnimation from '../../../public/done.json';
 const Contact = () => {
     const [state, handleSubmit] = useForm("xleyakko");
     const [showmessage, setshowmessage] = useState(false)
@@ -47,6 +49,7 @@ const Contact = () => {
                     <button type="submit" disabled={state.submitting} >
                         {state.submitting ? <div className="lds-ring"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> : 'submit'}
                     </button>
+                    <Lottie animationData={doneAnimation} />
                     {showmessage && (<p style={{ fontSize: '25px' }}>Thanks for joining!💖🖤</p>)}
                 </form>
                 <div className="anim">
