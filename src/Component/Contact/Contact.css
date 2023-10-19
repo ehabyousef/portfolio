@@ -28,6 +28,8 @@
 }
 .box {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .box .form {
   display: flex;
