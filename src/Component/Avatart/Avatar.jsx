@@ -1,7 +1,7 @@
 import React from "react";
 import "./Avatar.css";
-import avatar_dark from '../../../public/laptop.json';
 import Lottie from "lottie-react";
+import laptop from '../../../public/laptop.json';
 const Avatar = () => {
     return (
         <div className="contain avatar">
@@ -32,8 +32,7 @@ const Avatar = () => {
                 </div>
             </div>
             <div className="left">
-                <Lottie style={{ height: '32rem' }} animationData={avatar_dark} />
-
+                <Lottie style={{ height: '60rem' }} animationData={laptop} />
             </div>
         </div>
     );
