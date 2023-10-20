@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Main.css';
-// import axios from 'axios';
 import { AnimatePresence, motion } from "framer-motion"
 import { myProjects } from './MyProjects';
 const Main = () => {
