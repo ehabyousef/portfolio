@@ -14,7 +14,6 @@ const Header = () => {
             document.body.classList.remove("light");
         }
     }, [mode]);
-    console.log(mode);
     return (
         <header>
             <div className="popup">
