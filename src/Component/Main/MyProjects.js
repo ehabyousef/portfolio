@@ -85,12 +85,12 @@ export const myProjects = [
     repo: "dsaddddsddsdf",
   },
   {
-    title: "dates Reminder ",
+    title: "Mini Restaurant ",
     description: "simple web app builded with react using hooks",
     category: ["React"],
     img: "https://2.bp.blogspot.com/-NggPwFgxT-s/WqeTskSLsUI/AAAAAAAAA58/Sknhc4Ya3nYFLlm56OgPtDNViov-ViOPACLcBGAs/s1600/1*weUJDeO1uAcuDj3NHT_6Bw.png",
-    demo: "dsaaaaadsadsd",
-    repo: "dsaddddsddsdf",
+    demo: "https://github.com/ehabyousef/minirestaurant",
+    repo: "/",
   },
   {
     title: "Food App",
