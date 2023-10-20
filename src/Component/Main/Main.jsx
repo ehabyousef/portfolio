@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Main.css';
-import axios from 'axios';
+// import axios from 'axios';
 import { AnimatePresence, motion } from "framer-motion"
+import { myProjects } from './MyProjects';
 const Main = () => {
     const [active, setActive] = useState('all');
-    const [projectData, setProjectData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
+    const [projectData, setProjectData] = useState(myProjects);
+    const [filteredData, setFilteredData] = useState(myProjects);
 
-    const getProject = () => {
-        axios
-            .get('http://localhost:3030/results')
-            .then((res) => {
-                setProjectData(res.data);
-                setFilteredData(res.data);
-            })
-            .catch((err) => console.log(err));
-    };
+    // const getProject = () => {
+    //     axios
+    //         .get('http://localhost:3030/results')
+    //         .then((res) => {
+    //             setProjectData(res.data);
+    //             setFilteredData(res.data);
+    //         })
+    //         .catch((err) => console.log(err));
+    // };
 
     const handleEvent = (category) => {
         setActive(category);
@@ -29,9 +30,9 @@ const Main = () => {
         }
     };
 
-    useEffect(() => {
-        getProject();
-    }, []);
+    // useEffect(() => {
+    //     getProject();
+    // }, []);
 
     return (
         <div className="contain portfolio">
