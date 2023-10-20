@@ -3,18 +3,32 @@ import "./Contact.css";
 import { ValidationError, useForm } from "@formspree/react";
 import Lottie from "lottie-react";
 import doneAnimation from "../../../public/done.json";
-import contact_light from '../../../public/contact_light.json';
+import contact_light from "../../../public/contact_light.json";
+
 const Contact = () => {
     const [state, handleSubmit] = useForm("xleyakko");
-    const [showmessage, setshowmessage] = useState(false);
+    const [showMessage, setShowMessage] = useState(false);
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleMessageChange = (e) => {
+        setMessage(e.target.value);
+    };
     useEffect(() => {
         if (state.succeeded) {
-            setshowmessage(true);
+            setShowMessage(true);
             setTimeout(() => {
-                setshowmessage(false);
-            }, 4000);
+                setShowMessage(false);
+            }, 3000);
+            setEmail("");
+            setMessage("");
         }
     }, [state.succeeded]);
+
 
     return (
         <div className="contain cont_main">
@@ -24,15 +38,22 @@ const Contact = () => {
                     <b>Contact Me</b>
                 </span>
                 <p>
-                    contact us for more infomation and get notified when i puplish
+                    contact us for more information and get notified when I publish
                     something new
                 </p>
             </div>
             <div className="box">
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="first">
-                        <label htmlFor="email">Email Adress</label>
-                        <input type="email" name="email" id="email" required />
+                        <label htmlFor="email">Email Address</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            value={email}
+                            onChange={handleEmailChange}
+                        />
                         <ValidationError
                             prefix="Email"
                             field="email"
@@ -40,8 +61,14 @@ const Contact = () => {
                         />
                     </div>
                     <div className="sec">
-                        <label htmlFor="message">Your Message </label>
-                        <textarea name="message" id="message" required></textarea>
+                        <label htmlFor="message">Your Message</label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            required
+                            value={message}
+                            onChange={handleMessageChange}
+                        ></textarea>
                         <ValidationError
                             prefix="Message"
                             field="message"
@@ -61,19 +88,30 @@ const Contact = () => {
                                 <div></div>
                             </div>
                         ) : (
-                            "submit"
+                            "Submit"
                         )}
                     </button>
 
-                    {showmessage && (
-                        <p style={{ fontSize: "25px", display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                            <Lottie loop={false} style={{ height: '60px' }} animationData={doneAnimation} />
+                    {showMessage && (
+                        <p
+                            style={{
+                                fontSize: "25px",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <Lottie loop={false} style={{ height: "60px" }} animationData={doneAnimation} />
                             Thanks for joining!💖🖤
                         </p>
                     )}
                 </form>
                 <div className="anim">
-                    <Lottie className="contant_light" style={{ height: '25rem' }} animationData={contact_light} />
+                    <Lottie
+                        className="contant_light"
+                        style={{ height: "25rem" }}
+                        animationData={contact_light}
+                    />
                 </div>
             </div>
         </div>

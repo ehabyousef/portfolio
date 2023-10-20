@@ -7,7 +7,10 @@ const Avatar = () => {
     return (
         <div className="contain avatar">
             <div className="right">
-                <img src="circle.png" alt="" width="100px" />
+                <motion.img initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 2 }}
+                    src="circle.png" alt="" width="130px" />
                 <div className="text">
                     <motion.h1
                         initial={{ opacity: 0 }}
