@@ -11,7 +11,9 @@
   gap: 20px;
   width: 40%;
 }
-
+.left {
+  translate: 0px 4rem;
+}
 .text {
   display: flex;
   flex-direction: column;
@@ -53,5 +55,13 @@
   }
   .text p {
     line-height: 17px;
+  }
+}
+@media (max-width: 1000px) {
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100%;
   }
 }
