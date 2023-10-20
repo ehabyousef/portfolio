@@ -73,7 +73,7 @@ const Contact = () => {
                     )}
                 </form>
                 <div className="anim">
-                    <Lottie className="" style={{ height: '25rem' }} animationData={contact_light} />
+                    <Lottie className="contant_light" style={{ height: '25rem' }} animationData={contact_light} />
                 </div>
             </div>
         </div>

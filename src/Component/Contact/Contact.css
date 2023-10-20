@@ -146,8 +146,8 @@
     text-align: center;
   }
 }
-@media (max-width:1080px) {
-  .contact_animation{
+@media (max-width: 980px) {
+  .anim {
     display: none;
   }
 }

@@ -2,13 +2,18 @@ import React from "react";
 import "./Avatar.css";
 import Lottie from "lottie-react";
 import dark from '../../../public/laptop_dark.json';
+import { motion } from "framer-motion"
 const Avatar = () => {
     return (
         <div className="contain avatar">
             <div className="right">
                 <img src="circle.png" alt="" width="100px" />
                 <div className="text">
-                    <h1>Software Developer, Designer and compotitive programmer</h1>
+                    <motion.h1
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 2 }}
+                    >Software Developer, Designer and compotitive programmer</motion.h1>
                     <p>
                         I’m Ehab, a software designer and entrepreneur based in Cairo,
                         Egypt. I’m the Developer and Designer who develop

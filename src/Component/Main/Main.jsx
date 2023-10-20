@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css';
 import axios from 'axios';
-
+import { AnimatePresence, motion } from "framer-motion"
 const Main = () => {
     const [active, setActive] = useState('all');
     const [projectData, setProjectData] = useState([]);
@@ -68,25 +68,32 @@ const Main = () => {
                 </button>
             </div>
             <div className="left_main">
-                {filteredData.map((x, ind) => (
-                    <div className="card" key={ind}>
-                        <img src={x.img} alt="" width="250px" height={200} />
-                        <div className="content" style={{ width: '250px' }}>
-                            <h1 className="tilte">{x.title}</h1>
-                            <p className="subtitle">{x.description}</p>
-                            <div className="icon">
-                                <div className="marks">
-                                    <a href={x.repo}>
-                                        <i className="fa-solid fa-link"></i>
-                                    </a>
-                                    <a href={x.demo} target='blank'>
-                                        <i className="fa-brands fa-github"></i>
-                                    </a>
+                <AnimatePresence>
+                    {filteredData.map((x, ind) => (
+                        <motion.div
+                            layout
+                            initial={{ transform: "scale(0)" }}
+                            animate={{ transform: "scale(1)" }}
+                            transition={{ type: 'spring', damping: 8, stiffness: 50 }}
+                            className="card" key={ind}>
+                            <img src={x.img} alt="" width="250px" height={200} />
+                            <div className="content" style={{ width: '250px' }}>
+                                <h1 className="tilte">{x.title}</h1>
+                                <p className="subtitle">{x.description}</p>
+                                <div className="icon">
+                                    <div className="marks">
+                                        <a href={x.repo}>
+                                            <i className="fa-solid fa-link"></i>
+                                        </a>
+                                        <a href={x.demo} target='blank'>
+                                            <i className="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                ))}
+                        </motion.div>
+                    ))}
+                </AnimatePresence>
             </div>
         </div>
     );
