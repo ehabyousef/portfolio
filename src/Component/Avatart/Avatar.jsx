@@ -25,16 +25,16 @@ const Avatar = () => {
                     </p>
                 </div>
                 <div className="icons">
-                    <a href="/">
+                    <a href="https://www.facebook.com/profile.php?id=100080623690922" target="blank">
                         <i className="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="/">
+                    <a href="https://www.instagram.com/ehab.yousef.66/?utm_source=qr&igshid=MThlNWY1MzQwNA%3D%3D" target="blank">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="/">
-                        <i className="fa-brands fa-tiktok"></i>
+                    <a href="https://github.com/ehabyousef" target="blank">
+                        <i className="fa-brands fa-github"></i>
                     </a>
-                    <a href="/">
+                    <a href="https://www.linkedin.com/in/ehabyousef/" target="blank">
                         <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
