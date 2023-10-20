@@ -1,10 +1,9 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./Avatar.css";
 import Lottie from "lottie-react";
 import dark from '../../../public/laptop_dark.json';
 const Avatar = () => {
-    const [localMode, setlocalMode] = useState(localStorage.getItem('currentMode'))
-        return (
+    return (
         <div className="contain avatar">
             <div className="right">
                 <img src="circle.png" alt="" width="100px" />
@@ -33,7 +32,7 @@ const Avatar = () => {
                 </div>
             </div>
             <div className="left">
-                
+
                 <Lottie style={{ height: '40rem' }} animationData={dark} />
             </div>
         </div>
