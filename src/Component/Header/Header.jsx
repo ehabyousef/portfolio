@@ -87,16 +87,16 @@ const Header = () => {
                             </button>
                         </li>
                         <li>
-                            <a href="">Article</a>
+                            <a href="#article">Article</a>
                         </li>
                         <li>
                             <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="">speaking</a>
+                            <a href="#speaking">speaking</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
