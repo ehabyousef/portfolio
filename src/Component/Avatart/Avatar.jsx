@@ -67,9 +67,13 @@ const Avatar = () => {
                     </a>
                 </div>
             </div>
-            <div className="left">
+            <motion.div
+                initial={{ translateX: '50vw' }}
+                animate={{ translateX: "0vw" }}
+                transition={{ duration: 2 }}
+                className="left">
                 <Lottie style={{ height: "40rem" }} animationData={dark} />
-            </div>
+            </motion.div>
         </div>
     );
 };
