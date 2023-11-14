@@ -90,7 +90,7 @@ const Header = () => {
                             <a href="">Article</a>
                         </li>
                         <li>
-                            <a href="">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
                             <a href="">speaking</a>

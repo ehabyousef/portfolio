@@ -6,17 +6,6 @@ const Main = () => {
     const [active, setActive] = useState('all');
     const [projectData, setProjectData] = useState(myProjects);
     const [filteredData, setFilteredData] = useState(myProjects);
-
-    // const getProject = () => {
-    //     axios
-    //         .get('http://localhost:3030/results')
-    //         .then((res) => {
-    //             setProjectData(res.data);
-    //             setFilteredData(res.data);
-    //         })
-    //         .catch((err) => console.log(err));
-    // };
-
     const handleEvent = (category) => {
         setActive(category);
         if (category === 'all') {
@@ -28,13 +17,8 @@ const Main = () => {
             setFilteredData(filtered);
         }
     };
-
-    // useEffect(() => {
-    //     getProject();
-    // }, []);
-
     return (
-        <div className="contain portfolio">
+        <div className="contain portfolio" >
             <div className="right_main">
                 <button
                     onClick={() => handleEvent('all')}

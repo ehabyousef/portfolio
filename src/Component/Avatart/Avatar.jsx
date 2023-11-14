@@ -23,6 +23,9 @@ const Avatar = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2 }}
                     >
+                        <h4 style={{ color: "#3854A6", marginBottom: "20px" }}>
+                            Ehab Yousef
+                        </h4>
                         <Typewriter
                             options={{
                                 strings: [
