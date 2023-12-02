@@ -17,13 +17,12 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
+      behavior: 'smooth'
     });
   };
-
   return (
     <div className="container">
       <Header />
